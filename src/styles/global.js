@@ -15,7 +15,7 @@ export default createGlobalStyle`
   }
 
   body, input, button, textarea {
-    font-family: 'Roboto Slab', serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     outline: none;
   }
@@ -30,6 +30,6 @@ export default createGlobalStyle`
   }
 
   button:hover, a:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
   }
 `

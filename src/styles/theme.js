@@ -12,6 +12,7 @@ export default {
     TEXT: "#CAC4CF",
     PLACEHOLDER: '#948F99',
 
-    TAG: '#312E38'
+    TAG: '#312E38',
+    BLUE_800: '#0D0C0F',
   }
 }

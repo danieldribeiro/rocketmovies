@@ -12,11 +12,17 @@ export const Container = styled.div`
 		padding: 0 123px;
 		font-size: 18px;
 		color: ${({theme}) => theme.COLORS.PINK};
+
+    > svg {
+      cursor: pointer;
+    }
+
+    > span {
+      margin-left: 10px;
+      cursor: pointer;
+    }
 	}
 
-	> span {
-		margin-left: 10px;
-	}
 `
 
 export const Form = styled.form`

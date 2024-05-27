@@ -5,9 +5,7 @@ export const Container = styled.div`
   min-width: 340px;
   display: flex;
   align-items: center;
-
-  background-color: ${({ theme }) => theme.COLORS.INPUT} ;
-  
+  background-color: ${({ theme }) => theme.COLORS.INPUT};
   margin-bottom: 8px;
   border-radius: 10px;
 
@@ -21,7 +19,7 @@ export const Container = styled.div`
     border: 0;
 
     &:placeholder {
-      color: ${({ theme }) => theme.COLORS.PLACEHOLDER} 
+      color: ${({ theme }) => theme.COLORS.PLACEHOLDER};
     }
   }
 

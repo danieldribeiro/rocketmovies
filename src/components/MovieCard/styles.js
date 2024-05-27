@@ -18,7 +18,6 @@ export const Container = styled.div`
       overflow-y: scroll;
       margin: 20px 0;
 
-      /* Estilizando a barra de rolagem no WebKit (Chrome, Safari, Edge) */
       &::-webkit-scrollbar {
           width: 8px;
       }

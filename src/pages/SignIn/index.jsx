@@ -1,4 +1,6 @@
-import { MdMailOutline, MdLockOutline, MdPersonOutline, MdArrowBack  } from "react-icons/md";
+import { MdMailOutline, MdLockOutline  } from "react-icons/md"
+
+import { Link } from 'react-router-dom'
 
 import { Container, Form, Background } from "./styles"
 
@@ -6,25 +8,19 @@ import { Input } from "../../components/Input"
 import { Button } from "../../components/Button"
 import { TextButton } from "../../components/TextButton"
 
-export function SignOut(){
+export function SignIn(){
   return(
     <Container>
       <Form>
         <h1>RocketMovies</h1>
         <p>Aplicação para acompanhar tudo que assistir.</p>
 
-        <h2>Crie sua conta</h2>
-
-        <Input
-          placeholder="Nome"
-          type="text"
-          icon={MdPersonOutline}
-        />
+        <h2>Faça seu login</h2>
 
         <Input
           placeholder="E-mail"
-          type="password"
-          icon={MdMailOutline }
+          type="text"
+          icon={MdMailOutline}
         />
 
         <Input
@@ -33,9 +29,9 @@ export function SignOut(){
           icon={MdLockOutline }
         />
 
-        <Button title='Cadastrar'/>
+        <Button title='Entrar'/>
         
-        <TextButton title='Voltar para o login'/>
+        <Link to='/register'><TextButton title='Criar conta'/></Link>
       </Form>
 
       <Background/>

@@ -30,23 +30,17 @@ export const Container = styled.div`
       scrollbar-color: #888 #f1f1f1;
     }
 
-    > button {
-      border: none;
-      background-color: transparent;
-      color: ${({theme}) => theme.COLORS.PINK};
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    > svg {
-      cursor: pointer;
-    }
-
-    > span {
-      margin-left: 10px;
-      cursor: pointer;
+    > a {
+      > span {
+        margin-left: 10px;
+        cursor: pointer;
+        color: ${({theme}) => theme.COLORS.PINK};
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+      }
     }
 
     > h1 {

@@ -1,5 +1,7 @@
 import { MdSearch } from "react-icons/md";
 
+import { Link } from 'react-router-dom'
+
 import { Input } from "../Input";
 import { Container } from "./styles";
 
@@ -21,7 +23,9 @@ export function Header(){
           <strong>Daniel Ribeiro</strong>
         </div>
 
-        <img src="https://github.com/danieldribeiro.png" alt="Foto do usuário" />
+        <Link to='/profile'>
+          <img src="https://github.com/danieldribeiro.png" alt="Foto do usuário" />
+        </Link>
       </div>
     </Container>
   )

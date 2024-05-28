@@ -31,11 +31,13 @@ export const Container = styled.header`
       text-align: right;
     }
 
-    > img {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      margin-left: 16px; 
+    > a {
+      > img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        margin-left: 16px; 
+      }
     }
   }
 

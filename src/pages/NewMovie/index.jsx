@@ -1,5 +1,7 @@
 import { MdArrowBack, MdClose } from 'react-icons/md'
 
+import { Link } from 'react-router-dom'
+
 import { Header } from "../../components/Header"
 import { Container, Form } from "./styles"
 import { Input } from '../../components/Input'
@@ -12,10 +14,9 @@ export function NewMovie(){
       <Header/>
 
     <Form>
-      <button>
-        <MdArrowBack/>
-        <span>Voltar</span>
-      </button>
+      <Link to='/'>
+        <span><MdArrowBack/> Voltar</span>
+      </Link>
 
       <h1>Novo filme</h1>
 

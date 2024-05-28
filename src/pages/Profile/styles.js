@@ -13,13 +13,17 @@ export const Container = styled.div`
 		font-size: 18px;
 		color: ${({theme}) => theme.COLORS.PINK};
 
-    > svg {
-      cursor: pointer;
-    }
-
-    > span {
-      margin-left: 10px;
-      cursor: pointer;
+    > a {
+      > span {
+        margin-left: 10px;
+        cursor: pointer;
+        color: ${({theme}) => theme.COLORS.PINK};
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0;
+      }
     }
 	}
 

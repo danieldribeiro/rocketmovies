@@ -7,25 +7,20 @@ export const Container = styled.div`
 export const Form = styled.form`
   width: 100%;
   padding: 50px 123px;
+
+  > a {
+    > span {
+      margin-left: 10px;
+      cursor: pointer;
+      color: ${({theme}) => theme.COLORS.PINK};
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0;
+    }
+  }
   
-  > button {
-    border: none;
-    background-color: transparent;
-    color: ${({theme}) => theme.COLORS.PINK};
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  > svg {
-    cursor: pointer;
-  }
-
-  > span {
-    margin-left: 10px;
-    cursor: pointer;
-  }
 
   > h1 {
     margin: 30px 0;

@@ -2,8 +2,9 @@ import { MdArrowBack, MdOutlineStar, MdOutlineStarHalf, MdOutlineWatchLater  } f
 
 import { Container } from "./styles"
 
+import { Link } from 'react-router-dom'
+
 import { Header } from "../../components/Header"
-import { Avatar } from '../Profile/styles'
 import { Tag } from '../../components/Tag'
 
 export function Movie(){
@@ -12,10 +13,9 @@ export function Movie(){
       <Header/>
 
       <main>
-        <button>
-          <MdArrowBack/>
-          <span>Voltar</span>
-        </button>
+        <Link to='/'>
+          <span><MdArrowBack/> Voltar</span>
+        </Link>
 
         <h1>Interstellar</h1>
 
